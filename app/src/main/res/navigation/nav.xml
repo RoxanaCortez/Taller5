@@ -3,7 +3,8 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/nav">
+        android:id="@+id/nav"
+        app:startDestination="@id/FirstFragment">
 
     <fragment
             android:id="@+id/FirstFragment"
@@ -33,7 +34,7 @@
             android:id="@+id/ThirdFragment"
             android:name="com.roxyapps.roxana.prueba2.FirstFragment"
             android:label="third fragment"
-            tools:layout="@layout/fragment_second">
+            tools:layout="@layout/fragment_third">
         <action
                 android:id="@+id/next"
                 app:destination="@id/FourthFragment"
@@ -45,12 +46,15 @@
             android:id="@+id/FourthFragment"
             android:name="com.roxyapps.roxana.prueba2.FirstFragment"
             android:label="fourth fragment"
-            tools:layout="@layout/fragment_second">
+            tools:layout="@layout/fragment_fourth">
         <action
                 android:id="@+id/next"
                 app:popUpTo="@id/FirstFragment"
                 app:popEnterAnim="@anim/nav_default_pop_enter_anim"
                 app:popExitAnim="@anim/nav_default_pop_exit_anim"
-                app:popUpToInclusive="true"/>/>
+                app:popUpToInclusive="true"
+                app:destination="@+id/FirstFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"/>
     </fragment>
 </navigation>

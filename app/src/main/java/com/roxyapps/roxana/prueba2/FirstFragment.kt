@@ -1,11 +1,15 @@
 package com.roxyapps.roxana.prueba2
 
 
+import android.net.Uri
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
+
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -24,8 +28,11 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        val view = inflater.inflate(R.layout.fragment_first, container, false)
+        view.findViewById<Button>(R.id.bt_next1).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.next)
+        }
+        return view
     }
-
 
 }
