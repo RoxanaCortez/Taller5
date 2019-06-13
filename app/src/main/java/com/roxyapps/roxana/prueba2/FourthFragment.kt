@@ -1,7 +1,5 @@
 package com.roxyapps.roxana.prueba2
 
-
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
