@@ -3,4 +3,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frag2">Fragmet2</string>
+    <string name="txt1">Este es mi primer fragmento</string>
+    <string name="frg1">Fragmet1</string>
+    <string name="txt4">Este es mi cuarto fragmento</string>
+    <string name="frg2">Este es mi segundo fragmento</string>
+    <string name="frg3">Fragmet3</string>
+    <string name="frg4">Fragmet4</string>
 </resources>

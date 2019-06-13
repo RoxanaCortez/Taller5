@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFF</color>
+    <color name="cel">#4EE0FF</color>
+    <color name="vrd">#46ECCF</color>
+    <color name="rs">#FF4EC9</color>
+    <color name="amr">#FFE64E</color>
 </resources>

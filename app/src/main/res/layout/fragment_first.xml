@@ -9,24 +9,24 @@
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:layout_margin="10dp"
-                    android:background="#4EE0FF">
+                    android:layout_margin="@dimen/mrg10"
+                    android:background="@color/cel">
         <TextView
                 android:id="@+id/tv_frag1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Este es mi primer fragmento"
+                android:text="@string/txt1"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="20sp"
-                android:layout_margin="20dp"/>
+                android:textSize="@dimen/txt20"
+                android:layout_margin="@dimen/mrg20"/>
 
         <Button android:id="@+id/bt_next1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fragmet2"
+                android:text="@string/frag2"
                 android:layout_below="@+id/tv_frag1"
-                android:background="#FFFF"
-                android:layout_margin="20dp"
+                android:background="@color/white"
+                android:layout_margin="@dimen/mrg20"
                 android:gravity="center"/>
     </RelativeLayout>
 
